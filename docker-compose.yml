@@ -1,11 +1,1 @@
-version: '3.9'
-
-services:
-  app:
-    build: .
-    container_name: mlops-hello-world
-    ports:
-      - "8000:8000"
-    volumes:
-      - ./data:/app/data
-      - ./models:/app/models
+## TODO - Crair serviços para o docker

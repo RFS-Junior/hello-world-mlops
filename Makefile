@@ -19,17 +19,5 @@ evaluate:
 deploy:
 	uvicorn src.deploy:app --reload --host 0.0.0.0 --port 8000
 
-# 5. Construção da imagem Docker
-docker-build:
-	docker build -t $(DOCKER_IMAGE) .
-
-# 6. Execução do contêiner Docker
-docker-run:
-	docker run -it --rm -p $(DOCKER_PORT):$(DOCKER_PORT) -v $(PWD)/data:/app/data -v $(PWD)/models:/app/models $(DOCKER_IMAGE)
-
-# 7. Rodar a pipeline de ML
+# 5. Rodar a pipeline de ML
 ml-pipeline: preprocess train evaluate deploy
-
-# 8. Rodar tudo com Docker
-docker-pipeline: preprocess train evaluate docker-build docker-run
-

@@ -2,6 +2,7 @@
 pandas>=1.3.5,<2.2          # Manipulação de dados
 scikit-learn>=1.0.1,<1.6.0  # Treinamento e avaliação de modelos
 joblib==1.4.2               # Serialização de modelos
+mlflow==2.19.0
 
 # Para criar a API de previsão
 fastapi==0.115.6            # Framework para APIs

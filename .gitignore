@@ -1,9 +1,7 @@
 # Ignorar o ambiente virtual
 .env
 venv/
-
-# Ignorar modelos treinados
-models/*                       # Diretório onde os modelos treinados são salvos
+mlruns/
 
 # Ignorar arquivos de configuração específicos do sistema
 *.DS_Store                    # Arquivo do sistema operacional macOS
