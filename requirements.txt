@@ -1,0 +1,18 @@
+# Bibliotecas principais
+pandas>=1.3.5,<2.2          # Manipulação de dados
+scikit-learn>=1.0.1,<1.6.0  # Treinamento e avaliação de modelos
+joblib==1.4.2               # Serialização de modelos
+
+# Para criar a API de previsão
+fastapi==0.115.6            # Framework para APIs
+uvicorn==0.34.0             # Servidor ASGI para executar a API
+
+# Monitoramento e validação (opcional)
+evidently==0.5.1            # Monitoramento de deriva de dados
+great-expectations==1.3.0   # Validação da qualidade dos dados
+
+# Logging (opcional)
+loguru==0.7.3               # Logging avançado
+
+# Bibliotecas extras (opcional)
+numpy>=1.26.0,<2.1          # Cálculos numéricos (frequentemente usado com pandas)
